@@ -1,4 +1,7 @@
-import datetime
+from datetime import datetime, timedelta, timezone
+KST = timezone(timedelta(hours=9))
+today_str = datetime.now(KST).date().isoformat()
+
 import random
 import streamlit as st
 
