@@ -1,9 +1,12 @@
-from datetime import datetime, timedelta, timezone
-KST = timezone(timedelta(hours=9))
-today_str = datetime.now(KST).date().isoformat()
+# 📚 우리 반 도우미 챗봇 (한국 시간 적용 버전)
 
+from datetime import datetime, timedelta, timezone
 import random
 import streamlit as st
+
+# 🌟 한국 시간대 설정 (UTC+9)
+KST = timezone(timedelta(hours=9))
+today_str = datetime.now(KST).date().isoformat()
 
 # 🌟 급식 데이터
 meals = {
@@ -56,9 +59,6 @@ science_quizzes = [
     {"question": "DNA는 무엇의 약자일까요?", "answer": "Deoxyribonucleic Acid"},
     {"question": "소리보다 빛이 빠른 이유는?", "answer": "빛은 진공에서도 전달되고, 소리는 매질이 있어야 해서"}
 ]
-
-# 오늘 날짜 가져오기
-today_str = datetime.date.today().isoformat()
 
 # 오늘 급식 가져오기
 today_meal = meals.get(today_str, "오늘은 급식 정보가 없어요. (주말이거나 데이터가 없을 수 있어요.)")
