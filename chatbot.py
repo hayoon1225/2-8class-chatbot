@@ -89,7 +89,7 @@ if user_input:
         st.markdown(f"🧪 과학 퀴즈!\n\n**Q. {quiz['question']}**\n\n(정답: ||{quiz['answer']}||)")
 
     elif any(keyword in lowered for keyword in ["돼지"]):
-        st.markdown(꿀꿀)
+        st.markdown("꿀꿀")
 
     # 기타
     else:
