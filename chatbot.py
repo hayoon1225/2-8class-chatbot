@@ -88,6 +88,9 @@ if user_input:
     elif any(keyword in lowered for keyword in ["퀴즈", "과학", "문제"]):
         st.markdown(f"🧪 과학 퀴즈!\n\n**Q. {quiz['question']}**\n\n(정답: ||{quiz['answer']}||)")
 
+    elif any(keyword in lowered for keyword in ["돼지"]):
+        st.markdown(꿀꿀)
+
     # 기타
     else:
         st.markdown("🤖 미안, 아직 그 질문은 잘 몰라. '급식', '시험', '퀴즈' 같은 말을 써볼래?")
