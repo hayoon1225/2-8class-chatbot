@@ -1,4 +1,4 @@
-# 📚 우리 반 도우미 챗봇 (한국 시간 적용 버전)
+# 📚 옥빛고 2-8 챗봇 (한국 시간 적용 버전)
 
 from datetime import datetime, timedelta, timezone
 import random
@@ -67,7 +67,7 @@ today_meal = meals.get(today_str, "오늘은 급식 정보가 없어요. (주말
 quiz = random.choice(science_quizzes)
 
 # 🌟 Streamlit 앱 시작
-st.title("📚 우리 반 도우미 챗봇")
+st.title("📚 옥빛고 2-8 챗봇")
 
 # 사용자 입력 받기
 user_input = st.text_input("👤 하고 싶은 말을 입력해 보세요:")
